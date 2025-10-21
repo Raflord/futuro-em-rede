@@ -3,41 +3,63 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/ico" href="assets/favicon.ico">
-		<title>Página inicial</title>
+		<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/page-layout.css">
+		<title>Pagina Inicial</title>
 	</head>
 	<body>
 		<header>
-			<nav>
-				<a href="index.html"><img src="img/logo-futuro-em-rede-vector.svg" alt="Logo Futuro em Rede" width="40" height="40"></a>
-				<a href="index.html">Página inicial</a>
-				<span>|</span>
-				<a href="projetos.html">Projetos sociais</a>
-				<span>|</span>
-				<a href="cadastro.html">Voluntariado</a>
-				<span>|</span>
-				<a href="#contato">Contato</a>
-			</nav>
+			<a class="menu-trigger text-muted" href="#nav">
+				<svg viewBox="0 0 24 24" class="icon">
+					<path d="M4 6l16 0"></path>
+					<path d="M4 12l16 0"></path>
+					<path d="M4 18l16 0"></path>
+				</svg>
+			</a>
 		</header>
+		<aside id="nav">
+			<header>
+				<a href="/" class="text-center">
+					<img src="img/logo-futuro-em-rede-vector.svg" alt="Futuro em Rede" height="60" width="60">
+				</a>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<h2 class="text-lg flex items-center gap-2">
+							<span>Conheça a ONG</span>
+						</h2>
+						<ul>
+							<li><a href="index.html">Página inicial</a></li>
+							<li><a href="projetos.html">Projetos sociais</a></li>
+							<li><a href="cadastro.html">Voluntariado</a></li>
+							<li><a href="index.html#contato">Contato</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<a class="menu-overlay" href="#close"></a>
 		<main>
 			<section>
 				<h1>
 					<img src="img/logo-futuro-em-rede-nobg.png" alt="Futuro em Rede">
 				</h1>
 				<h2>Conectando pessoas ao conhecimento digital</h2>
-				<div>
-					<a href="cadastro.html">Participe</a>
-					<span>|</span>
-					<a href="cadastro.html">Doe Agora</a>
+				<div class="flex gap-8 justify-center">
+					<a href="cadastro.html" class="button">Participe -></a>
+					<a href="cadastro.html" class="button">Faça uma doação -></a>
 				</div>
 			</section>
 			<section id="sobre">
 				<h2>Sobre Nós</h2>
-				<p>A Futuro em Rede é uma organização sem fins lucrativos que acredita no poder da educação digital para transformar vidas.
+				<p class="text-lg">A Futuro em Rede é uma organização sem fins lucrativos que acredita no poder da educação digital para transformar vidas.
 					Atuamos em comunidades de baixa renda, oferecendo cursos gratuitos de informática, programação e cidadania digital.
 					Nosso objetivo é capacitar jovens e adultos para o mercado de trabalho e promover inclusão social por meio da tecnologia.</p>
 			</section>
-			<section id="missao">
+			<hr>
+			<section id="missao" class="text-lg">
 				<h2>Nossa Missão e Valores</h2>
 				<p>Conectar pessoas ao conhecimento e às oportunidades do futuro digital.</p>
 				<ul>
@@ -47,37 +69,54 @@
 					<li>Ética e transparência</li>
 				</ul>
 			</section>
+			<hr>
 			<section id="projetos">
 				<h2>Nossas Ações em Destaque</h2>
 				<article>
 					<h3>Oficinas de programação para adolescentes</h3>
-					<p>Iniciando os jovens ao mundo da programação</p>
+					<ul>
+						<li class="text-lg">
+							Iniciando os jovens ao mundo da programação
+						</li>
+					</ul>
 				</article>
 				<article>
 					<h3>Cursos de alfabetização digital para adultos e idosos</h3>
-					<p>Mantendo todos atualizados nas inovações da tecnoloigia</p>
+					<ul>
+						<li class="text-lg">
+							Mantendo todos atualizados nas inovações da tecnoloigia
+						</li>
+					</ul>
 				</article>
 				<article>
 					<h3>Parcerias com escolas públicas</h3>
-					<p>Implementando a alfabetização digital desde cedo com os alunos</p>
+					<ul>
+						<li class="text-lg">
+							Implementando a alfabetização digital desde cedo com os alunos
+						</li>
+					</ul>
 				</article>
-				<a href="projetos.html">Conheça nossos projetos -></a>
+				<a href="projetos.html" class="button">Conheça nossos projetos -></a>
 			</section>
+			<hr>
 			<section id="newsletter">
 				<h2>Receba novidades sobre nossos projetos e próximos mutirões.</h2>
 				<form>
-					<fieldset>
-						<label for="email">Informe seu e-mail para receber atualizações:</label>
-						<input type="email"
-						       id="email"
-						       name="email"
-						       placeholder="exemplo@email.com"
-						       required
-						>
+					<fieldset class="max-w-screen-sm">
+						<label for="email">
+							<span>Informe seu e-mail para receber atualizações:</span>
+							<input type="email"
+							       id="email"
+							       name="email"
+							       placeholder="exemplo@email.com"
+							       required
+							>
+						</label>
 						<button type="submit">Assinar Newsletter</button>
 					</fieldset>
 				</form>
 			</section>
+			<hr>
 			<section id="contato">
 				<h2>Contato</h2>
 				<address>
@@ -85,23 +124,24 @@
 					<p>Telefone: <a href="tel:+551140002040">(11) 4000-2040</a></p>
 					<p>Endereço: Rua da Tecnologia, 101 - São Paulo, SP</p>
 					<!--Endereço ficticio, por tanto o mapa mostra apenas a cidade de São Paulo como um todo e não o endereço exato, apenas para exemplo de como seria a implemantação do mapa-->
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233845.1663963411!2d-46.760103210479315!3d-23.68201078658353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1760193780709!5m2!1sen!2sbr" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233845.1663963411!2d-46.760103210479315!3d-23.68201078658353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1760193780709!5m2!1sen!2sbr" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</address>
 			</section>
+			<footer>
+				<hr>
+				<p>© 2025 Futuro em Rede – Todos os direitos reservados</p>
+				<aside>
+					<a href="index.html">Inicio</a>
+					<span>|</span>
+					<a href="projetos.html">Projetos</a>
+					<span>|</span>
+					<a href="cadastro.html">Cadastro</a>
+					<span>|</span>
+					<a href="cadastro.html">Doações</a>
+					<span>|</span>
+					<a href="politica.html">Política de Privacidade</a>
+				</aside>
+			</footer>
 		</main>
-		<footer>
-			<p>© 2025 Futuro em Rede – Todos os direitos reservados</p>
-			<aside>
-				<a href="index.html">Inicio</a>
-				<span>|</span>
-				<a href="projetos.html">Projetos</a>
-				<span>|</span>
-				<a href="cadastro.html">Cadastro</a>
-				<span>|</span>
-				<a href="doacoes.html">Doações</a>
-				<span>|</span>
-				<a href="politica.html">Política de Privacidade</a>
-			</aside>
-		</footer>
 	</body>
 </html>
