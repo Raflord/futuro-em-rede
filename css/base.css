@@ -1,0 +1,11 @@
+/* configurações globais */
+@import "_config.css";
+
+/* estilos principais */
+@import "_core.css";
+
+/* classes utilitarias */
+@import "_utilities.css";
+
+/* componentes reutilizaveis */
+@import "_components.css";
