@@ -59,6 +59,7 @@
 	<h2>Receba novidades sobre nossos projetos e próximos mutirões.</h2>
 	<form>
 		<fieldset class="max-w-screen-sm">
+			<legend>Newsletter</legend>
 			<label for="email">
 				<span>Informe seu e-mail para receber atualizações:</span>
 				<input type="email"
@@ -80,21 +81,21 @@
 		<p>Telefone: <a href="tel:+551140002040">(11) 4000-2040</a></p>
 		<p>Endereço: Rua da Tecnologia, 101 - São Paulo, SP</p>
 		<!--Endereço ficticio, por tanto o mapa mostra apenas a cidade de São Paulo como um todo e não o endereço exato, apenas para exemplo de como seria a implemantação do mapa-->
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233845.1663963411!2d-46.760103210479315!3d-23.68201078658353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1760193780709!5m2!1sen!2sbr" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233845.1663963411!2d-46.760103210479315!3d-23.68201078658353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1760193780709!5m2!1sen!2sbr" title="Localização Google Maps" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</address>
 </section>
 <footer>
 	<hr>
 	<p>© 2025 Futuro em Rede – Todos os direitos reservados</p>
 	<aside>
-		<a href="index.html">Inicio</a>
+		<a href="/" onclick="route(event)">Inicio</a>
 		<span>|</span>
-		<a href="projetos.html">Projetos</a>
+		<a href="/projetos" onclick="route(event)">Projetos</a>
 		<span>|</span>
-		<a href="cadastro.html">Cadastro</a>
+		<a href="/cadastro" onclick="route(event)">Cadastro</a>
 		<span>|</span>
-		<a href="cadastro.html">Doações</a>
+		<a href="/cadastro" onclick="route(event)">Doações</a>
 		<span>|</span>
-		<a href="politica.html">Política de Privacidade</a>
+		<a href="/politica" onclick="route(event)">Política de Privacidade</a>
 	</aside>
 </footer>
