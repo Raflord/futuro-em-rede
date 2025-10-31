@@ -17,6 +17,7 @@ O site foi construído para representar a presença digital da organização, pe
 ```
 ── futuro-em-rede
    ├── index.html          # Página inicial
+   ├── build              # Arquivos minificados para deploy
    ├── assets              # Assets para web
    ├── css
    │   ├── base.css        # Arquivo CSS base (importa todos demais estilos)
